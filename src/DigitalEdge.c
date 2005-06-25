@@ -1407,7 +1407,7 @@ xf86SumInit(InputDriverPtr	drv,
 #ifdef XFree86LOADER
 static
 #endif
-InputDriverRec DIGITALEDGE = {
+_X_EXPORT InputDriverRec DIGITALEDGE = {
     1,				/* driver version */
     "digitaledge",		/* driver name */
     NULL,			/* identify */
@@ -1467,9 +1467,11 @@ static XF86ModuleVersionInfo xf86SumVersionRec =
 				/* a tool */
 };
 
-XF86ModuleData digitaledgeModuleData = {&xf86SumVersionRec,
-					xf86SumPlug,
-					xf86SumUnplug};
+_X_EXPORT XF86ModuleData digitaledgeModuleData = {
+    &xf86SumVersionRec,
+    xf86SumPlug,
+    xf86SumUnplug
+};
 
 #endif /* XFree86LOADER */
 #endif /* XFREE86_V4 */
