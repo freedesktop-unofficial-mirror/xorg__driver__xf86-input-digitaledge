@@ -1404,9 +1404,6 @@ xf86SumInit(InputDriverPtr	drv,
     return local;
 }
 
-#ifdef XFree86LOADER
-static
-#endif
 _X_EXPORT InputDriverRec DIGITALEDGE = {
     1,				/* driver version */
     "digitaledge",		/* driver name */
