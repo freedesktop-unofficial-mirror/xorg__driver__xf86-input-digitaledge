@@ -46,7 +46,7 @@
 #include <errno.h>
 #endif
 
-#include <X11/misc.h>
+#include "misc.h"
 #include "xf86.h"
 #define NEED_XF86_TYPES
 #if !defined(DGUX)
@@ -105,7 +105,7 @@ static InputDriverPtr dedgeDrv;
 #define NEED_EVENTS
 #include <X11/X.h>
 #include <X11/Xproto.h>
-#include <X11/misc.h>
+#include "misc.h"
 #include "inputstr.h"
 #include "scrnintstr.h"
 #include <X11/extensions/XI.h>
