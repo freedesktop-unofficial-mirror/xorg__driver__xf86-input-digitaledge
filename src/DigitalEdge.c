@@ -195,7 +195,7 @@ typedef struct {
 	int dedgeClickThresh;	/* Click threshold in arbitary units */
     int flags;			/* various flags */
     int dedgeIndex;		/* number of bytes read */
-    unsigned char dedgeData[5];	/* data read on the device */
+    unsigned char dedgeData[7];	/* data read on the device */
 } DigitalEdgeDeviceRec, *DigitalEdgeDevicePtr;
 
 /*
