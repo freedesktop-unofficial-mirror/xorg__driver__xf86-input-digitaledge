@@ -38,6 +38,12 @@
 
 #include "xf86Version.h"
 
+#if XF86_VERSION_CURRENT >= XF86_VERSION_NUMERIC(3,9,0,0,0)
+#define XFREE86_V4 1
+#endif
+
+/* post 3.9 headers */
+
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
