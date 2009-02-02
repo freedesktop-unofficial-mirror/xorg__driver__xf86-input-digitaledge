@@ -1,3 +1,5 @@
+.deps
+.libs
 Makefile
 Makefile.in
 *.la
@@ -18,3 +20,6 @@ ltmain.sh
 missing
 stamp-h1
 *~
+xf86-input-digitaledge-*.tar.*
+ChangeLog
+tags
